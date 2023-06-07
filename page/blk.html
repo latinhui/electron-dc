@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="../static/jscss/vue.js"></script>
+    <script src="../static/jscss/render.js"></script>
+    <script src="../static/jscss/axios.min.js"></script>
+    <script src="../static/jscss/qs.min.js"></script>
+    <script src="../static/jscss/elementui.js"></script>
+    <link rel="stylesheet" href="../static/jscss/elementui.css">
+  </head>
+  <body>
+    <div id="app">
+        <h1>electron-DC</h1>
+        <h2>{{message}}</h2>
+    </div>
+    <a href="index.html">返回首页</a>
+    <script>
+        var app = new Vue({
+        el: '#app',
+        data: {
+            message: '空白页模板'
+        },
+        methods:{
+            nWin(e){
+                nw(e)
+            },
+        }
+        })
+    </script>
+  </body>
+</html>
